@@ -3,22 +3,20 @@ import { GluestackUIProvider } from '@/components/ui/gluestack-ui-provider';
 import '@/global.css';
 import { Button, ButtonText } from '@/components/ui/button';
 import { Divider } from '@/components/ui/divider';
-import { Link } from 'expo-router';
 
-export default function app() {
+export default function Home() {
   return (
     <GluestackUIProvider mode="dark">
       <View style={styles.container}>
         <Text className="uppercase font-extrabold">Página Home</Text>
 
         <Divider className="my-3 w-40" />
-         <Link href="/pagina1" asChild>
+
         <Button className="bg-blue-500">
           <ButtonText className="font-bold text-white">
             Primeira página
           </ButtonText>
         </Button>
- </Link>
 
         <Button className="bg-green-500">
           <ButtonText className="font-bold text-white">
