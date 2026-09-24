@@ -1,57 +1,71 @@
-import { Tabs } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons';
+import { Tabs } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function TabLayout() {
   return (
-    <Tabs 
-      screenOptions={{ 
-        tabBarActiveTintColor: 'blue',
-        headerShown: false, // Esconde o cabeçalho padrão de cima se quiser
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: "blue",
+        headerShown: false,
       }}
     >
-      {/* Aba da Home / Index */}
-      <Tabs.Screen 
-        name="index" 
-        options={{ 
-          title: 'Home',
+
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: "Home",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home-outline" size={size} color={color} />
+            <Ionicons
+              name="home"
+              size={size}
+              color={color}
+            />
           ),
-        }} 
+        }}
       />
 
-      {/* Aba da Página 1 */}
-      <Tabs.Screen 
-        name="pagina1" 
-        options={{ 
-          title: 'Página 1',
+      <Tabs.Screen
+        name="Pagina1"
+        options={{
+          title: "Gostei",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="heart-outline" size={size} color={color} />
+            <Ionicons
+              name="heart"
+              size={size}
+              color={color}
+            />
           ),
-        }} 
+        }}
       />
 
-      {/* Aba da Página 2 */}
-      <Tabs.Screen 
-        name="pagina2" 
-        options={{ 
-          title: 'Página 2',
+      <Tabs.Screen
+        name="Pagina2"
+        options={{
+          title: "Carrinho",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="star-outline" size={size} color={color} />
+            <Ionicons
+              name="cart"
+              size={size}
+              color={color}
+            />
           ),
-        }} 
+        }}
       />
 
-      {/* Aba da Página 3 */}
-      <Tabs.Screen 
-        name="pagina3" 
-        options={{ 
-          title: 'Página 3',
+      <Tabs.Screen
+        name="Pagina3"
+        options={{
+          title: "Perfil",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person-outline" size={size} color={color} />
+            <Ionicons
+              name="person"
+              size={size}
+              color={color}
+            />
           ),
-        }} 
+        }}
       />
+
     </Tabs>
   );
 }

@@ -1,17 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native';
+
 import { Button, ButtonText } from '@/components/ui/button';
 import { Divider } from '@/components/ui/divider';
-import {useRouter} from "expo-router";
+import { Link } from 'expo-router';
 
-export default function Pagina1() {
-  const router = useRouter();
+export default function app() {
   return (
-
-      <View style={styles.container}>
-        <Text className="uppercase font-extrabold">Meu perfil</Text>
-      </View>
-
-
+    <View style={styles.container}>
+      <Text className="uppercase font-extrabold">Home</Text>
+    </View>
   );
 }
 
@@ -21,6 +18,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     gap: 10,
-       backgroundColor: '#bfdaf5',
+    backgroundColor: '#bfdaf5', // Altere esta cor de fundo como desejar
   },
 });
